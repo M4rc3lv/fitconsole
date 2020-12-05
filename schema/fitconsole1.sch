@@ -1,0 +1,292 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:+5V USB
+U 1 1 5FCDA2D5
+P 5400 1300
+F 0 "USB" V 5400 1600 50  0000 R CNN
+F 1 "+5V" V 5415 1428 50  0001 L CNN
+F 2 "" H 5400 1300 50  0001 C CNN
+F 3 "" H 5400 1300 50  0001 C CNN
+	1    5400 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Bikkel2:Arduino_Leonardo A?
+U 1 1 5FC31C0D
+P 5200 2400
+F 0 "A?" V 5246 1256 50  0001 R CNN
+F 1 "Leonardo" V 5175 2500 50  0000 R CNN
+F 2 "Module:Arduino_UNO_R3" H 5200 2400 50  0001 C CIN
+F 3 "https://www.arduino.cc/en/Main/ArduinoBoardLeonardo" H 5200 2400 50  0001 C CNN
+	1    5200 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Bikkel3:LED D?
+U 1 1 5FC33019
+P 4250 2400
+F 0 "D?" V 4197 2478 50  0001 L CNN
+F 1 "Sens" H 4375 2300 50  0000 R CNN
+F 2 "" H 4250 2400 50  0001 C CNN
+F 3 "~" H 4250 2400 50  0001 C CNN
+	1    4250 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR?
+U 1 1 5FCA2032
+P 3625 2600
+F 0 "#PWR?" H 3625 2350 50  0001 C CNN
+F 1 "GNDD" H 3629 2445 50  0001 C CNN
+F 2 "" H 3625 2600 50  0001 C CNN
+F 3 "" H 3625 2600 50  0001 C CNN
+	1    3625 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Bikkel3:VL53L0X L
+U 1 1 5FC4BD42
+P 1650 2250
+F 0 "L" V 1175 1850 60  0001 L CNN
+F 1 "VL53L0X" V 1625 1950 60  0000 L CNN
+F 2 "" H 1700 2200 60  0000 C CNN
+F 3 "" H 1700 2200 60  0000 C CNN
+	1    1650 2250
+	0    1    -1   0   
+$EndComp
+$Comp
+L power:GNDD #PWR?
+U 1 1 5FCB5CA7
+P 5100 3600
+F 0 "#PWR?" H 5100 3350 50  0001 C CNN
+F 1 "GNDD" H 5104 3445 50  0001 C CNN
+F 2 "" H 5100 3600 50  0001 C CNN
+F 3 "" H 5100 3600 50  0001 C CNN
+	1    5100 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:DIN-5 J?
+U 1 1 5FC6E0FF
+P 6250 3100
+F 0 "J?" H 6250 2733 50  0001 C CNN
+F 1 "POLE" H 6250 2825 50  0000 C CNN
+F 2 "" H 6250 3100 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/18/40_c091_abd_e-75918.pdf" H 6250 3100 50  0001 C CNN
+	1    6250 3100
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	5100 3500 5100 3600
+$Comp
+L Connector:DIN-5 J?
+U 1 1 5FC8F440
+P 1750 1225
+F 0 "J?" H 1750 858 50  0001 C CNN
+F 1 "POLE" V 1750 995 50  0000 R CNN
+F 2 "" H 1750 1225 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/18/40_c091_abd_e-75918.pdf" H 1750 1225 50  0001 C CNN
+	1    1750 1225
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5400 1300 5400 1350
+$Comp
+L Bikkel3:LED D?
+U 1 1 5FC9EE9D
+P 4250 2100
+F 0 "D?" V 4197 2178 50  0001 L CNN
+F 1 "On" H 4300 2000 50  0000 R CNN
+F 2 "" H 4250 2100 50  0001 C CNN
+F 3 "~" H 4250 2100 50  0001 C CNN
+	1    4250 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Bikkel3:R2 R?
+U 1 1 5FC3F407
+P 3850 2100
+F 0 "R?" H 3925 2146 50  0001 L CNN
+F 1 "220" V 3850 2025 50  0000 L CNN
+F 2 "" V 3780 2100 50  0001 C CNN
+F 3 "~" H 3850 2100 50  0001 C CNN
+	1    3850 2100
+	0    1    1    0   
+$EndComp
+$Comp
+L Bikkel3:R2 R?
+U 1 1 5FCBDAAE
+P 3850 2400
+F 0 "R?" H 3925 2446 50  0001 L CNN
+F 1 "220" V 3850 2325 50  0000 L CNN
+F 2 "" V 3780 2400 50  0001 C CNN
+F 3 "~" H 3850 2400 50  0001 C CNN
+	1    3850 2400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6575 3000 6575 1350
+Wire Wire Line
+	6575 1350 5400 1350
+Connection ~ 5400 1350
+Wire Wire Line
+	5400 1350 5400 1400
+Wire Wire Line
+	6575 3000 6550 3000
+$Comp
+L power:GNDD #PWR?
+U 1 1 5FCD2378
+P 6250 3450
+F 0 "#PWR?" H 6250 3200 50  0001 C CNN
+F 1 "GNDD" H 6254 3295 50  0001 C CNN
+F 2 "" H 6250 3450 50  0001 C CNN
+F 3 "" H 6250 3450 50  0001 C CNN
+	1    6250 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 3400 6250 3450
+Wire Wire Line
+	3700 2100 3625 2100
+Wire Wire Line
+	3625 2100 3625 2400
+Wire Wire Line
+	3700 2400 3625 2400
+Connection ~ 3625 2400
+Wire Wire Line
+	3625 2400 3625 2600
+Wire Wire Line
+	4100 2100 4000 2100
+Wire Wire Line
+	4400 2100 4700 2100
+Wire Wire Line
+	4700 2400 4400 2400
+Wire Wire Line
+	4100 2400 4000 2400
+Wire Wire Line
+	5700 3200 5950 3200
+Wire Wire Line
+	5950 3000 5825 3000
+Wire Wire Line
+	5825 3000 5825 3100
+Wire Wire Line
+	5825 3100 5700 3100
+Wire Wire Line
+	1650 1650 1650 1525
+Wire Wire Line
+	1850 1525 1750 1525
+Wire Wire Line
+	1750 1525 1750 1650
+Wire Wire Line
+	2400 900  2400 2850
+Wire Wire Line
+	2400 2850 2050 2850
+Wire Wire Line
+	1750 2850 1150 2850
+Wire Wire Line
+	1150 2850 1150 1225
+Wire Wire Line
+	1150 1225 1450 1225
+Wire Wire Line
+	1850 900  2400 900 
+Wire Wire Line
+	1850 900  1850 925 
+$Comp
+L power:GNDD #PWR?
+U 1 1 5FD0C95C
+P 4300 2925
+F 0 "#PWR?" H 4300 2675 50  0001 C CNN
+F 1 "GNDD" H 4304 2770 50  0001 C CNN
+F 2 "" H 4300 2925 50  0001 C CNN
+F 3 "" H 4300 2925 50  0001 C CNN
+	1    4300 2925
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 2800 4300 2925
+$Comp
+L Bikkel3:Push_Button SW?
+U 1 1 5FD10C27
+P 4525 3525
+F 0 "SW?" V 4479 3679 50  0001 L CNN
+F 1 "On" V 4525 3400 50  0000 L CNN
+F 2 "" H 4525 3725 50  0001 C CNN
+F 3 "~" H 4525 3725 50  0001 C CNN
+	1    4525 3525
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4525 3325 4525 2900
+Wire Wire Line
+	4525 2900 4700 2900
+$Comp
+L power:GNDD #PWR?
+U 1 1 5FD1202D
+P 4525 3800
+F 0 "#PWR?" H 4525 3550 50  0001 C CNN
+F 1 "GNDD" H 4529 3645 50  0001 C CNN
+F 2 "" H 4525 3800 50  0001 C CNN
+F 3 "" H 4525 3800 50  0001 C CNN
+	1    4525 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4525 3725 4525 3800
+$Comp
+L Connector:Screw_Terminal_01x02 J?
+U 1 1 5FD147F0
+P 4100 2700
+F 0 "J?" H 4018 2917 50  0001 C CNN
+F 1 "TRAMP" H 4325 2550 50  0000 C CNN
+F 2 "" H 4100 2700 50  0001 C CNN
+F 3 "~" H 4100 2700 50  0001 C CNN
+	1    4100 2700
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 2700 4700 2700
+$Comp
+L Connector:Screw_Terminal_01x02 J?
+U 1 1 5FC934DD
+P 2400 3600
+F 0 "J?" H 2318 3817 50  0001 C CNN
+F 1 "TRAMP" H 2625 3450 50  0000 C CNN
+F 2 "" H 2400 3600 50  0001 C CNN
+F 3 "~" H 2400 3600 50  0001 C CNN
+	1    2400 3600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Bikkel3:Push_Button SW?
+U 1 1 5FC94065
+P 2925 3600
+F 0 "SW?" V 2879 3754 50  0001 L CNN
+F 1 "On" V 2925 3475 50  0001 L CNN
+F 2 "" H 2925 3800 50  0001 C CNN
+F 3 "~" H 2925 3800 50  0001 C CNN
+	1    2925 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 3600 2725 3600
+Wire Wire Line
+	3150 3700 3150 3600
+Wire Wire Line
+	3150 3600 3125 3600
+Wire Wire Line
+	3150 3700 2600 3700
+$EndSCHEMATC
