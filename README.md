@@ -1,4 +1,4 @@
-# fitconsole
+# Fitconsole
 Exergaming system. A complete gaming system with a console, sensors, firmware and games.
 
 Fitconsole is a game console for exergaming: playing and moving at the same time.
