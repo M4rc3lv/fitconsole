@@ -1,4 +1,4 @@
-// The Console - part of Fitconsole
+// The Pole - part of Fitconsole
 /*
 Copyright 2020 Marcel Veldhuizen
 
@@ -15,11 +15,18 @@ See the License for the specific language governing permissions and
 limitations under the License.*/
 $fn=200;
 
-Tripod=10; // For Hot Orange 3D
-Wirefeed=1;
-Extension=1;
+//LED's:
+// 1 - On/off
+// 2 - Trigger (buttons)
+// 3 - Trigger (sensors?)
+// - Button to switch on/off
 
-if(Extension) translate([90,0,0]){
+Tripod=10;   // Mount for Hot Orange spools
+Wirefeed=1;  // Sleeve to hide wires going in the tube
+Extension=1; // Part to make a longer piece of pipe out of 2 shorter pieces
+Polemount=1; // Base for the pole (connects to Tripod with M3 screws)
+
+if(Extension) translate([80,0,0]) {
  difference() {
   union() {
    cylinder(d1=25,d2=24.4,h=40); 
@@ -77,6 +84,23 @@ module SpoelInsert() {
   cylinder(d=40,h=40);   
   translate([0,0,5])cylinder(d=32.2,h=40); 
  }
+}
+
+if(Polemount) translate([0,0,0]) {
+ difference() {
+  // Top
+  cylinder(d=95,h=3); 
+  // Screw holes
+  rotate([0,0,-15])translate([26,26,-2])cylinder(d=3.2,h=10);
+  rotate([0,0,-75])translate([26,26,-2])cylinder(d=3.2,h=10);
+  rotate([0,0,-15])translate([-26,-26,-2])cylinder(d=3.2,h=10);
+  rotate([0,0,15])translate([-26,26,-2])cylinder(d=3.2,h=10);
+  
+  translate([-44,84,4]) HolesLeonardo();
+ }
+ SpoelInsert();
+  
+   
 }
 
 module HolesLeonardo() {
