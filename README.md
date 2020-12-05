@@ -1,14 +1,12 @@
 # fitconsole
 Exergaming system. A complete gaming system with a console, sensors, firmware and games.
 
-Fitconsole is een spelcomputer voor exergaming: spelen en bewegen tegelijkertijd.
+Fitconsole is a game console for exergaming: playing and moving at the same time.
 
-Geschikt voor beweegspelletjes op school, in de sportschool of thuis. Voor kinderen en volwassenen.
-Fitconsole game console
-Over
+Suitable for exercise games at school, in the gym or at home. For children and adults.
 
-De fitconsole is een compleet systeem met game-console en diverse sensoren om fitness-spelletjes mee te spelen. Zowel de console als de sensoren kunt u zelf maken want de fitconsole is 100% open source.
+The fit console is a complete system with game console and various sensors to play fitness games. You can make both the console and the sensors yourself because the fit console is 100% open source.
 
-Het grootste voordeel dat fitnessgames hebben ten opzichte van traditionele vormen van lichaamsbeweging, is dat het spelen niet alleen een fysieke activiteit is, maar ook een vorm van amusement: bewegen, zweten en glimlachen tegelijk.
+The biggest advantage that fitness games have over traditional forms of exercise is that playing is not only a physical activity, but also a form of entertainment: moving, sweating and smiling all at the same time.
 
-Bij het spelen van de spelletjes wordt u uitgedaagd om te springen en te bukken. Sensors detecteren bewegingen zoals sprongen, squats en boksbewegingen en het spel reageert daar op. 
+When playing the games you will be challenged to jump and duck. Sensors detect movements such as jumps, squats and boxing movements and the game responds to them.
